@@ -26,6 +26,7 @@ if (!$_GET) {
 
 
 $nombre = $_GET['nombre'];
+$apellido = $_GET['apellido'];
 $sexo = $_GET['sexo'];
 $year = $_GET['year'];
 $terminos = $_GET['terminos'];
@@ -35,10 +36,27 @@ if ($nombre){
 } else {
 	echo "El usario no establecio su nombre <br>";
 }
+if ($apellido){
+	echo $apellido . '<br />';
+} else {
+	echo "El usario no establecio su apellido <br>";
+}
+if ($sexo){
+	echo $sexo . '<br />';
+} else {
+	echo "El usario no establecio su sexo <br>";
+}
+if ($year){
+	echo $year . '<br />';
+} else {
+	echo "El usario no establecio su edad <br>";
+}
+if ($terminos){
+	echo $terminos . '<br />';
+} else {
+	echo "No aceptatste los terminos <br>";
+}
 
-echo $sexo . '<br />';
-echo $year . '<br />';
-echo $terminos . '<br />';
 
 
 ?>
